@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+    padding-top: 128px;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+
+
+}
+
+#logo {
+background-image: url("images/watches.jpg");
+background-size: contain;
+background-repeat: no-repeat;
+display: block;
+width: 64px;
+height: 64px;
+
+}
+
+#logo span {
+color:#3E3F43;
+width: 191px;
+height: 33px;
+padding-top: 32px;
+padding-left: 93px;
+position: absolute;
+font-family: Nunito;
+font-weight: 700;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 25%;
+
+}
+
+nav {
+    margin-left: 419px;
+    margin-top: 48px;
+    display: flex;        /* 👈 הופך את כל ה-a לשורה אחת */
+    justify-content: center; /* 👈 מרכז את הלינקים באמצע */
+    gap: 48px;  
+}
+/* ניווט עליון */
+nav a {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 24px;
+
+
+}
+
+nav a:hover {
+    color: #1434E1;
+}
+
+
+#wrapper{
+    margin: 0 auto;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column; /* אלמנטים אחד מתחת לשני */
+    padding: 0 32px; /* רווח קבוע מימין ומשמאל */
+    gap: 32px; /* רווח קבוע של 32px בין כל אלמנט לאלמנט */
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: Nunito;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 100%;
+    color:#612999;
+    
+}
+
+#full-width-image {
+    width: 100vw;
+    overflow: hidden;
+    margin: 32px 0;
+    position: relative;
+
+  }
+  
+#full-width-image img {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  #body-text-section{
+    margin-top:64px;
+
+}
+
+#body-text-section p {
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 24px;
+    font-style: normal;
+    letter-spacing: 0%;
+    color: black;
+    width: 100%;
+    margin-top: 8px;
+    line-height: 100%;
+
+
+}
+
+
+
+#about-sec {
+
+    margin-bottom: 32px; /* ✅ רווח מתחת */
+
+
+}
+
+h2 {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    color: #612999;
+    margin-top: 32px; /* ✅ רווח מתחת */
+    
+
+}
+
+#about-sec p {
+
+    margin-bottom: 24px;
+    font-style:normal ;
+    color: black ;
+    width: 100%;
+    font-weight: 400;
+    margin-top: 8px ;
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 141%;
+    letter-spacing: 0%;
+    
+}
+
+
+
+.hero-text {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-30%);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+  }
+  
+  .product-card {
+    background-color: #EFECFF;
+    padding: 1em;
+    box-shadow: 0 5px 5px #e1e1e1;
+    font-family: Abel;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 38px;
+    height: 496px;
+    width: 376px;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 38px;
+    height:276px;
+    width: 100%;
+  }
+  
+  .product-card h4 {
+    margin: 21px 0 0 32px; /* רווח רק מתחת! */
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  
+
+  /* טקסט פסקה */
+.product-card p {
+    margin: 7px 0 0 32px; /* רווח של 73px מתחת לטקסט */
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  /* קבוצה של מחיר וכפתור */
+  .price-and-button {
+    display: flex;
+    align-items: center;
+    gap: 94px; /* רווח של 94 פיקסלים בין המחיר לכפתור */
+  }
+  
+  /* מחיר */
+  .price {
+    font-family: abel;
+    margin: 7px 0 73px 32px; /* רווח של 73px מתחת לטקסט */
+    font-size: 35px;
+    color: #000;
+  }
+  
+  /* כפתור קנייה */
+  .buy-button {
+    background-color: #612999;
+    margin: 7px 0 73px 32px; /* רווח של 73px מתחת לטקסט */
+    border: none;
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .like-button{
+    background-color: #EFECFF;
+    margin: 7px 0 73px 32px; /* רווח של 73px מתחת לטקסט */
+    border: none;
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .like-button img{
+    width: 23px;
+    height: 20px;
+  }
+
+  .buy-button img{
+    width: 31px;
+    height: 31px;
+  }
+
+  footer{
+    background-color: #EFECFF;
+    margin-top: 246px;
+  }
+
+  footer section{
+    margin: 0 125px;
+
+  }
+
+  #footer-sections-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 150px; /* ✅ מרחק של 150px בין הסקשנים */
+    margin-left: 32px; /* ✅ מרחק התחלה מהצד */
+    padding-top: 59px;
+    padding-bottom: 41px;
+    border-bottom: 1px solid #ffffff;
+  }
+  
+
+  #footer-links-section, #footer-links-section-2 {
+    border-bottom: 1px solid #ffffff;
+    padding-top: 59px;
+    padding-bottom: 41px;
+    margin-left: 32px;
+    margin-top: 32px;
+}
+
+#footer-links-section a,
+#footer-links-section-2 a {
+    margin-top: 32px;
+}
+
+#footer-links-section h1,
+#footer-links-section-2 h1 {
+    font-family: Nunito;
+    color: #333333;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-bottom: 16px; /* ✅ רווח של 16px מתחת לכותרת */
+
+}
+
+
+#footer-links-section a span {
+    font-style: normal;
+    font-weight: normal;
+    color: #333333;
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    
+
+
+}
+
+
+#footer-links-section ul,
+#footer-links-section-2 ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+  }
+  
+  #footer-links-section li,
+  #footer-links-section-2 li {
+    margin-bottom: 8px; /* ✅ רווח קבוע של 8 פיקסלים בין פריטים */
+  }
+
+
+#footer-social-icons-section {
+    margin-top: 42px;
+    padding-bottom: 43px;
+}
+
