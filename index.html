@@ -6,36 +6,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header id="header-wrapper">
-    <a href="#" id="logo">
-        <span>Watchus</span>
-    </a>
-
-    <nav>
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="watches.html">Our Watches</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-
-<main>
-    <section id="full-width-image">
-        <img src="images/watchesimage.jpg" alt="Watch">
-    </section>
-
-    <div id="wrapper">
+    <main id="wrapper">
+      <header>
+          <section class="navigation">
+            <a href="#" id="logo">
+              <span>Watchus</span>
+            </a>
+            <nav>
+                <a href="index.html" class="bold">Home</a>
+                <a href="watches.html">Our Watches</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+          </section>
+      </header>
+    <section id="main-section">
         <h1>Enjoy!</h1>
-        <p id="body-text-section">
+        <p>
             Lorem ipsum dolor sit amet,consectetur adipiscing elit.Mi mauris arcu aenean in mauris elementum sed non. 
         </p>
-    </div>  
-
-    <div id="wrapper">
-        <h2>About</h2>
-        <div id="about-sec">
+      </section>  
+        <section id="about-sec">
+          <h2 class="title">About</h2>
             <p>
                 We’ve actually already asked hundreds of women what they want, and made a database with the results. All you have to do is take our short survey that only takes seconds, and our proprietary algorithm will match you with a few perfect gift options.
             </p>
@@ -45,50 +37,48 @@
             <p>
                 We’ve actually already asked hundreds of women what they want, and made a database with the results. All you have to do is take our short survey that only takes seconds, and our proprietary algorithm will match you with a few perfect gift options.
             </p>
-        </div>
-    </div>
-
-    <div id="wrapper">
-        <h2>Popular Products</h2>
-        <section class="cards-container">
-            <div class="product-card">
+          </section>
+        <article>
+          <h2 class="title">Popular Products</h2>
+        </article>
+        <section class="cards-container">    
+            <section class="product-card">
                 <img src="images/watch1.webp" alt="watch_carlington">
                 <h4>Classic Watch</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
-                <div class="price-and-button">
-                    <span class="price">$299</span>
-                    <button class="buy-button">
-                        <img src="images/shopping-basket 4.png">
-                    </button>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="images/watch1.webp" alt="watch_carlington">
-                <h4>Classic Watch</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
-                <div class="price-and-button">
+                <section class="price-and-button">
                     <span class="price">$299 us</span>
                     <button class="buy-button">
                         <img src="images/shopping-basket 4.png">
                     </button>
-                </div>
-            </div>
+                  </section>
+                </section>
 
-            <div class="product-card">
+            <section class="product-card">
                 <img src="images/watch1.webp" alt="watch_carlington">
                 <h4>Classic Watch</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
-                <div class="price-and-button">
+                <section class="price-and-button">
                     <span class="price">$299 us</span>
                     <button class="buy-button">
                         <img src="images/shopping-basket 4.png">
                     </button>
-                </div>
-            </div>
+                </section>
+            </section>
+
+            <section class="product-card">
+                <img src="images/watch1.webp" alt="watch_carlington">
+                <h4>Classic Watch</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.</p>
+                <section class="price-and-button">
+                    <span class="price">$299 us</span>
+                    <button class="buy-button">
+                        <img src="images/shopping-basket 4.png">
+                    </button>
+                </section>
+            </section>
         </section>
-    </div>
-</main>
+      </main>
 
 <footer>
     <div id="footer-content">
@@ -118,6 +108,9 @@
                 <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
                 <a href="#"><img src="images/instgram.png" alt="Instagram"></a>
             </div>
+            <article class="footer-credit">
+              <p>© 2024 SMOOTHIES</p>
+            </article>
         </div>
     </div>
 </footer>

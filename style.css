@@ -11,14 +11,12 @@
   box-sizing: border-box;
 }
 
-main {
-    padding-top: 128px;
-}
-
-
-
 a {
     text-decoration: none;
+}
+
+main {
+  overflow: hidden;
 }
 
 
@@ -46,38 +44,63 @@ a {
   font-family: Nunito;
   font-weight: 700;
   font-size: 24px;
+  letter-spacing: 25%;
   margin-left: 93px; /* רווח קטן מהתמונה */
 }
 
-nav {
+.navigation{
   display: flex;
-  gap: 48px;
+  align-items: center;
+  width: 100%;
+  margin-top: 32px;
 }
 
-nav a {
+.navigation nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 419px;
+}
+
+.navigation a {
   font-family: Nunito;
   font-weight: 400;
   color: #612999;
   text-transform: uppercase;
   font-style: normal;
-  font-size: 24px;
+  font-size: 30px;
   text-decoration: none;
+  line-height: 100%;
 }
 
 nav a:hover {
   color: #ae14e1;
 }
+.navigation a.bold{
+
+font-weight: bold;
+}
 
 #wrapper{
-    margin: 0 auto;
-    margin-bottom: 32px;
+    margin: 0 32px;
     display: flex;
     flex-direction: column; /* אלמנטים אחד מתחת לשני */
-    padding: 0 32px; /* רווח קבוע מימין ומשמאל */
     gap: 32px; /* רווח קבוע של 32px בין כל אלמנט לאלמנט */
-    max-width: 1200px;
     box-sizing: border-box;
 }
+
+#main-section {
+  height: 797px;
+  width: 1200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background: url("images/watchesimage.jpg");
+  
+
+}
+
+
 
 h1 {
     font-family: Nunito;
@@ -87,52 +110,22 @@ h1 {
     color:#612999;
     
 }
-
-#full-width-image {
-    width: 100vw;
-    overflow: hidden;
-    margin: 32px 0;
-    position: relative;
-
-  }
   
-#full-width-image img {
-    width: 100%;
-    height: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 32px;
-  }
 
-  #body-text-section{
-    margin-top:64px;
-
-}
-
-#body-text-section p {
-    font-family: Nunito;
-    font-weight: 600;
-    font-size: 24px;
-    font-style: normal;
-    letter-spacing: 0%;
-    color: black;
-    width: 100%;
-    margin-top: 8px;
-    line-height: 100%;
-
+#main-section p {
+  color: #000;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 100%;
+  width: 448px;
+  margin-top: 32px;
+  position: absolute;
 
 }
 
 
-
-#about-sec {
-
-    margin-bottom: 32px; /* ✅ רווח מתחת */
-
-
-}
-
-h2 {
+.title {
     font-family: Rubik;
     font-weight: 500;
     font-size: 40px;
@@ -146,42 +139,28 @@ h2 {
 
 #about-sec p {
 
-    margin-bottom: 24px;
     font-style:normal ;
     color: black ;
     width: 100%;
-    font-weight: 400;
     margin-top: 8px ;
     font-family: Nunito;
-    font-weight: 600;
     font-size: 20px;
     line-height: 141%;
     letter-spacing: 0%;
+    font-weight: 400;
     
 }
 
-
-
-.hero-text {
-    position: absolute;
-    top: 30%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
 
   .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 32px;
+    width: 100%;
   }
   
   .product-card {
     background-color: #EFECFF;
-    padding: 1em;
     box-shadow: 0 5px 5px #e1e1e1;
     font-family: Abel;
     display: flex;
@@ -196,7 +175,7 @@ h2 {
     max-width: 100%;
     border-radius: 38px;
     height:276px;
-    width: 100%;
+    width: 376px;
   }
   
   .product-card h4 {
@@ -220,30 +199,29 @@ h2 {
   /* קבוצה של מחיר וכפתור */
   .price-and-button {
     display: flex;
-    align-items: center;
-    gap: 94px; /* רווח של 94 פיקסלים בין המחיר לכפתור */
   }
   
   /* מחיר */
   .price {
     font-family: abel;
-    margin: 7px 0 73px 32px; /* רווח של 73px מתחת לטקסט */
+    margin: 0 0 36px 32px; /* רווח של 73px מתחת לטקסט */
     font-size: 35px;
     color: #000;
+    font-weight: 400;
+    color: #612999;
   }
   
   /* כפתור קנייה */
   .buy-button {
     background-color: #612999;
-    margin: 7px 0 73px 32px; /* רווח של 73px מתחת לטקסט */
-    border: none;
+    margin-bottom: 27px;
+    margin-left: 94px; /* רווח של 73px מתחת לטקסט */
     border-radius: 50%;
     width: 63px;
     height: 63px;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
   }
 
   .like-button{
@@ -272,12 +250,13 @@ h2 {
   footer {
     background-color: #EFECFF;
     width: 100vw;
-    min-height: 250px;
-    margin-top: 246px;
+    height: 287px;
+    position: fixed;
+    display: flex;
+    bottom: 0;
 }
 
 #footer-content {
-    padding: 40px 32px; /* הרווחים בצד! */
     box-sizing: border-box;
 }
 
@@ -286,6 +265,7 @@ h2 {
     flex-direction: column;
     gap: 32px;
     align-items: flex-start;
+    margin: 32px 0 0 32px;
 }
 
 #footer-links-wrapper {
@@ -333,10 +313,19 @@ h2 {
 #footer-social-icons-section {
     display: flex;
     gap: 24px;
-    margin-top: 24px;
 }
 
 #footer-social-icons-section img {
     width: 20px;
     height: 20px;
+}
+
+.footer-credit p {
+  font-family: Nunito, sans-serif;
+  font-weight: 600;
+  color: #333333;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  
 }
