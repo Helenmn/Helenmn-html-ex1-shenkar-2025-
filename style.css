@@ -6,13 +6,22 @@
   box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  min-height: 100%;
+  overflow-y: auto;
+  padding-bottom: 287px;
+}
+
+
+
 a {
     text-decoration: none;
 }
 
-main {
-  overflow: hidden;
-}
+
 
 
 #header-wrapper {
@@ -243,7 +252,7 @@ h1 {
 
   footer {
     background-color: #EFECFF;
-    width: 100vw;
+    width: 100%;
     height: 287px;
     position: fixed;
     display: flex;
@@ -337,7 +346,8 @@ h1 {
   width: 100%;
   vertical-align: middle;
   height: 300px;
-  border-color: #612999;
+  border: 4px solid #E6DBFE; /* עובי 4px, צבע סגול */
+
 }
 
 
@@ -385,6 +395,9 @@ h1 {
   height: 42.38px;
 }
 
+.sale-section {
+  gap:16px;
+}
 .sale-section p{
   color: #000;
   font-family: 'Nunito', sans-serif;
@@ -396,6 +409,6 @@ h1 {
 }
 
 .sale-section img{
-  width: 50%;
+  width: 70%;
   height: auto;
 }
